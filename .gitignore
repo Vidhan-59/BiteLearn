@@ -122,6 +122,8 @@ venv.bak/
 # sftp configuration file
 sftp-config.json
 
+bitelearn/myapp/._s2v_old
+
 # Package control specific files Package
 Control.last-run
 Control.ca-list
