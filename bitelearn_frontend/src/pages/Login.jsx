@@ -213,7 +213,7 @@ export default function Login() {
             Cookies.set('auth_token', token, { expires: 7, secure: true, sameSite: 'Lax', path: '/' });
             Cookies.set('username' , data.name ,  { expires: 7, secure: true, sameSite: 'Lax', path: '/' })
             setSuccessMessage('Login successful!');
-            navigate('/home');
+            navigate('/');
           }
         }
       } else {
@@ -241,6 +241,7 @@ export default function Login() {
       });
 
       const data = await response.json();
+      console.log()
       if (response.ok) {
         setSuccessMessage('OTP verified successfully. Logging in...');
         setShowOtp(false);
